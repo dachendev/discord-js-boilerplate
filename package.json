@@ -1,0 +1,25 @@
+{
+  "name": "toasty-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets @babel/preset-env",
+    "dev": "nodemon --exec npm run babel-node -- src/index.js",
+    "deploy": "npm run babel-node -- src/deploy-commands.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.3",
+    "nodemon": "^3.1.0"
+  }
+}
